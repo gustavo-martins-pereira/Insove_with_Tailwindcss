@@ -2,10 +2,15 @@
     "name": "insove",
     "version": "1.0.0",
     "description": "A landing page made with Tailwindcss",
-    "scripts": {},
+    "scripts": {
+        "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./build/assets/css/output.css --watch"
+    },
     "author": "Gustavo Martins Pereira",
     "license": "UNLICENSED",
     "devDependencies": {
         "tailwindcss": "^3.4.3"
+    },
+    "dependencies": {
+        "lucide": "^0.367.0"
     }
 }
