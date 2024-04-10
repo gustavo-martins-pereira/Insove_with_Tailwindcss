@@ -1,0 +1,11 @@
+{
+    "name": "insove",
+    "version": "1.0.0",
+    "description": "A landing page made with Tailwindcss",
+    "scripts": {},
+    "author": "Gustavo Martins Pereira",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "tailwindcss": "^3.4.3"
+    }
+}
