@@ -24,15 +24,54 @@
 </head>
 
 <body>
-    <header class="flex flex-col gap-4 items-center py-8">
-        <a href="./"><img src="assets/images/header/logo.svg" alt="Logotype of Insove"></a>
+    <header>
+        <div class="container mx-auto">
+            <div class="flex flex-col gap-4 items-center py-8 sm:flex-row sm:justify-between">
+                <a href="./"><img src="assets/images/header/logo.svg" alt="Logotype of Insove"></a>
+                
+                <address class="flex flex-col gap-4 text-mine-shaft text-center sm:hidden md:flex md:items-start xl:flex-row xl:gap-12">
+                    <p><i data-lucide="map-pin"></i> 123 Arling, Miola, NY</p>
+                    <p><i data-lucide="phone"></i> (+487) 384 9452</p>
+                </address>
 
-        <address class="flex flex-col gap-4">
-            <p><i data-lucide="map-pin"></i> 123 Arling, Miola, NY</p>
-            <p><i data-lucide="phone"></i> (+487) 384 9452</p>
-        </address>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
 
-        <button class="btn">Book Now</button>
+            <nav class="hidden shadow-3xl py-4 px-8 rounded-xl xl:block">
+                <ul class="flex justify-between">
+                    <div class="flex gap-2 items-center">
+                        <li>
+                            <a class="p-4 text-primary" href="#">Home</a>
+                        </li>
+                        <span class="text-alto">|</span>
+                        <li>
+                            <a class="p-4 text-gray transition-colors duration-500 hover:text-primary" href="#">Doctors</a>
+                        </li>
+                        <span class="text-alto">|</span>
+                        <li>
+                            <a class="p-4 text-gray transition-colors duration-500 hover:text-primary" href="#">Department</a>
+                        </li>
+                        <span class="text-alto">|</span>
+                        <li>
+                            <a class="p-4 text-gray transition-colors duration-500 hover:text-primary" href="#">Services</a>
+                        </li>
+                        <span class="text-alto">|</span>
+                        <li>
+                            <a class="p-4 text-gray transition-colors duration-500 hover:text-primary" href="#">Blog</a>
+                        </li>
+                        <span class="text-alto">|</span>
+                        <li>
+                            <a class="p-4 text-gray transition-colors duration-500 hover:text-primary" href="#">Contact</a>
+                        </li>
+                    </div>
+
+                    <div>
+                        <i data-lucide="search"></i>
+                        <input class="p-1 placeholder:italic focus:outline-none" type="text" placeholder="Search...">
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>
 </body>
 

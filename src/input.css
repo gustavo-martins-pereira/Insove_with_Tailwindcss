@@ -4,6 +4,18 @@
 
 @layer components {
     .btn {
-        @apply  uppercase
+        @apply uppercase rounded-[60px] py-4 px-12  transition-colors duration-500 font-medium
+    }
+
+    .btn-primary {
+        @apply border-2 border-primary text-abbey hover:border-abbey;
+    }
+
+    .btn-secondary {
+        @apply bg-primary text-white hover:bg-abbey
+    }
+
+    .btn-tertiary {
+        @apply bg-white text-abbey hover:bg-abbey hover:text-white
     }
 }
