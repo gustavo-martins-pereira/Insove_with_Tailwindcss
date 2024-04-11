@@ -99,37 +99,70 @@
         <!-- SERVICES -->
         <section class="m-auto xl:max-w-[1536px]">
             <header class="bg-primary pt-12 pb-24 2xl:rounded-3xl 2xl:pt-16 2xl:px-24 2xl:pb-40">
-                <div class="container m-auto px-2 md:grid md:grid-cols-2 md:gap-40 md:text-left">
+                <div class="container m-auto px-4 md:grid md:grid-cols-2 md:gap-40 md:text-left">
                     <h2 class="text-white text-2xl md:text-4xl">Our best services for your solution</h2>
                     <p class="mt-2 text-white text-base">Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.</p>
                 </div>
             </header>
 
-            <ul class="container m-auto flex flex-col gap-4 p-2 box-border -translate-y-12 md:grid md:grid-cols-2 lg:flex lg:flex-row 2xl:px-24 2xl:-translate-y-1/2">
-                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary">
+            <ul class="container m-auto flex flex-col gap-4 p-4 box-border -translate-y-12 md:grid md:grid-cols-2 lg:flex lg:flex-row 2xl:px-24 2xl:-translate-y-1/2">
+                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary transition-transform duration-500 hover:-translate-y-4">
                     <img class="max-w-10 max-h-10" src="assets/images/services/house.svg" alt="Illustrative icon for house">
                     <h3 class="text-mine-shaft text-2xl">General practitioners</h3>
                     <p class="text-rolling-stone">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
                 </li>
 
-                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary">
+                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary transition-transform duration-500 hover:-translate-y-4">
                     <img class="max-w-10 max-h-10" src="assets/images/services/pregnancy.svg" alt="Illustrative icon for pregnancy">
                     <h3 class="text-mine-shaft text-2xl">Pregnancy support</h3>
                     <p class="text-rolling-stone">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
                 </li>
 
-                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary">
+                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary transition-transform duration-500 hover:-translate-y-4">
                     <img class="max-w-10 max-h-10" src="assets/images/services/nutrition.svg" alt="Illustrative icon for list of nutrition">
                     <h3 class="text-mine-shaft text-2xl">Nutritional support</h3>
                     <p class="text-rolling-stone">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
                 </li>
 
-                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary">
+                <li class="bg-white flex flex-col items-center gap-2 text-center rounded-xl p-6 border-primary transition-transform duration-500 hover:-translate-y-4">
                     <img class="max-w-10 max-h-10" src="assets/images/services/pharmacy.svg" alt="Illustrative icon for pharmacy medication">
                     <h3 class="text-mine-shaft text-2xl">Pharmaceutical care</h3>
                     <p class="text-rolling-stone">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
                 </li>
             </ul>
+        </section>
+
+        <!-- BOOK AN APPOINTMENT -->
+        <section class="container m-auto p-4">
+            <h2 class="text-4xl text-abbey font-bold">Book Appointment or call: <span class="text-secondary hover:text-primary">(+487) 384 9452</span></h2>
+
+            <form class="flex flex-col gap-4 mt-8 lg:grid lg:grid-cols-2">
+                <select class="border-2 border-alto rounded-xl py-5 px-4">
+                    <option value="Select Your Department">Select Department </option>
+                    <option value="Department">Department of Physiotherapy</option>
+                    <option value="Department">Department of Dentistry</option>
+                    <option value="Department">ENT Department</option>
+                    <option value="Department">Department of Pharmacy</option>
+                    <option value="Department">Nursing Department</option>
+                </select>
+
+                <select class="border-2 border-alto rounded-xl py-5 px-4">
+                    <option value="Select Your Doctor">Select Doctor</option>
+                    <option value="Naidan Smith">William Davies</option>
+                    <option value="Danial Frankie">Charlotte Taylor</option>
+                    <option value="Jason Roy">William Jones</option>
+                </select>
+
+                <input class="border-2 border-alto rounded-xl py-5 px-6" type="text" placeholder="Full Name">
+
+                <input class="border-2 border-alto rounded-xl py-5 px-6" type="time" min="9AM" max="6PM">
+
+                <input class="border-2 border-alto rounded-xl py-5 px-6" type="text" placeholder="Phone Number">
+
+                <input class="border-2 border-alto rounded-xl py-5 px-6" type="date" min="2018-01-01" max="2018-12-31" placeholder="Choose Date">
+
+                <input class="btn btn-secondary w-fit mt-8" type="submit" value="Book an appointment">
+            </form>
         </section>
     </main>
 </body>
