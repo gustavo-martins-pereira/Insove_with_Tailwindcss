@@ -15,6 +15,7 @@ module.exports = {
         colors: {
             "white": "#ffffff",
             "primary": "#1CBCCF",
+            "secondary": "#90C6CD",
             "mine-shaft": "#333333",
             "abbey": "#4c5354",
             "rolling-stone": "#777F81",
