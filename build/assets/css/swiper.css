@@ -1,5 +1,12 @@
-.swiper-pagination {
+.swiper-pagination--testimonials,
+.swiper-pagination--our-team {
     position: static;
+
+    text-align: center;
+}
+
+.swiper-pagination--our-team {
+    margin-top: 1rem;
 }
 
 .swiper-pagination-bullet {

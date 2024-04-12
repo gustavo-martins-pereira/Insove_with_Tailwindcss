@@ -6,12 +6,30 @@ function initialize() {
 
 
     // SWIPER
-    const swiper = new Swiper('.swiper--testimonials', {
+    // TESTIMONIALS
+    new Swiper('.swiper--testimonials', {
         loop: true,
         spaceBetween: 250,
 
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination--testimonials',
+        },
+    });
+
+    // OUR TEAM
+    new Swiper('.swiper--our-team', {
+        loop: true,
+        spaceBetween: 250,
+
+        pagination: {
+            el: '.swiper-pagination--our-team',
+        },
+
+        breakpoints: {
+            1280: {
+                slidesPerView: 2,
+                spaceBetween: 200
+            },
         },
     });
 }
