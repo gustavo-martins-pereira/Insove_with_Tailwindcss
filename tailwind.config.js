@@ -7,11 +7,13 @@ module.exports = {
         extend: {
             backgroundImage: {
                 "hero": "url('/build/assets/images/hero/hero.png')",
+                "testimonials": "url('/build/assets/images/testimonials/bg.svg')",
             },
             fontFamily: {
                 "sans": ['"Poppins"', ...defaultTheme.fontFamily.sans],
             },
         },
+        // PROPERTIES
         colors: {
             "white": "#ffffff",
             "primary": "#1CBCCF",
@@ -25,8 +27,11 @@ module.exports = {
             "mystic": "#E8F0F1",
         },
         boxShadow: {
-            "3xl": "0 0 40px rgba(0, 0, 0, 0.1)"
-        }
+            "3xl": "0 0 40px rgba(0, 0, 0, 0.1)",
+        },
+        backgroundPosition: {
+            "center-right": "center right",
+        },
     },
     plugins: [],
 }

@@ -1,0 +1,16 @@
+.swiper-pagination {
+    position: static;
+}
+
+.swiper-pagination-bullet {
+    background-color: #90C6CD;
+
+    width: 0.75rem;
+    height: 0.75rem;
+
+    margin: 0 0.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #1CBCCF;
+}
