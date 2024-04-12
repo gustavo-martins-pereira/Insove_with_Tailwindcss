@@ -32,6 +32,15 @@ function initialize() {
             },
         },
     });
+
+    // DEPARTMENTS
+    new Swiper('.swiper--departments', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination--departments',
+        },
+    });
 }
 
 document.addEventListener("DOMContentLoaded", initialize);

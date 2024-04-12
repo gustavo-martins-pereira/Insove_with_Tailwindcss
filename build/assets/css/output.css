@@ -672,6 +672,11 @@ video {
   margin-right: auto;
 }
 
+.my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -706,6 +711,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -749,6 +758,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -771,8 +784,16 @@ video {
   list-style-type: none;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -808,6 +829,14 @@ video {
 .divide-alto > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(220 220 220 / var(--tw-divide-opacity));
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.justify-self-start {
+  justify-self: start;
 }
 
 .overflow-hidden {
@@ -861,6 +890,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gull-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 180 183 / var(--tw-bg-opacity));
 }
 
 .bg-testimonials {
@@ -958,6 +992,11 @@ video {
   padding-bottom: 10rem;
 }
 
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1005,6 +1044,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1292,6 +1336,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-\[1fr_2fr\] {
+    grid-template-columns: 1fr 2fr;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1334,6 +1382,10 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-\[1fr_2fr\] {
+    grid-template-columns: 1fr 2fr;
   }
 
   .md\:items-start {
@@ -1394,6 +1446,16 @@ video {
     justify-content: space-around;
   }
 
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1406,6 +1468,10 @@ video {
 
   .xl\:max-w-\[1536px\] {
     max-width: 1536px;
+  }
+
+  .xl\:grid-cols-\[1fr_2fr_1fr\] {
+    grid-template-columns: 1fr 2fr 1fr;
   }
 
   .xl\:flex-row {
