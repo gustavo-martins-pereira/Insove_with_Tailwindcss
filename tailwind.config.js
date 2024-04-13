@@ -25,6 +25,9 @@ module.exports = {
             fontFamily: {
                 "sans": ['"Poppins"', ...defaultTheme.fontFamily.sans],
             },
+            screens: {
+                "msm": {"max": "640px"},
+            },
         },
         // PROPERTIES
         colors: {
