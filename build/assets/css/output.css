@@ -975,7 +975,7 @@ video {
 }
 
 .bg-testimonials {
-  background-image: url('/build/assets/images/testimonials/bg.svg');
+  background-image: url('/assets/images/testimonials/bg.svg');
 }
 
 .bg-cover {
@@ -1282,7 +1282,7 @@ video {
 
 .before\:bg-hero::before {
   content: var(--tw-content);
-  background-image: url('/build/assets/images/hero/hero.png');
+  background-image: url('/assets/images/hero/hero.png');
 }
 
 .before\:bg-\[110\%_0\%\]::before {
@@ -1310,6 +1310,11 @@ video {
   content: var(--tw-content);
 }
 
+.before\:content-\[url\(\'\/assets\/images\/testimonials\/quote-left\.svg\'\)\]::before {
+  --tw-content: url('/assets/images/testimonials/quote-left.svg');
+  content: var(--tw-content);
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -1327,6 +1332,11 @@ video {
 
 .after\:content-\[url\(\'\/build\/assets\/images\/testimonials\/quote-right\.svg\'\)\]::after {
   --tw-content: url('/build/assets/images/testimonials/quote-right.svg');
+  content: var(--tw-content);
+}
+
+.after\:content-\[url\(\'\/assets\/images\/testimonials\/quote-right\.svg\'\)\]::after {
+  --tw-content: url('/assets/images/testimonials/quote-right.svg');
   content: var(--tw-content);
 }
 

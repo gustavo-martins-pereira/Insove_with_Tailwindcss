@@ -19,8 +19,8 @@ module.exports = {
                 "appear": "appear 1s ease-in-out",
             },
             backgroundImage: {
-                "hero": "url('/build/assets/images/hero/hero.png')",
-                "testimonials": "url('/build/assets/images/testimonials/bg.svg')",
+                "hero": "url('/assets/images/hero/hero.png')",
+                "testimonials": "url('/assets/images/testimonials/bg.svg')",
             },
             fontFamily: {
                 "sans": ['"Poppins"', ...defaultTheme.fontFamily.sans],
