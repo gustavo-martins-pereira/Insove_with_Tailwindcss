@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="stylesheet" href="./assets/css/lucide.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/swiper.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -341,25 +341,106 @@
         <!-- DEPARTMENTS -->
         <section class="bg-mystic container m-auto max-w-screen-2xl px-4 py-28 grid grid-cols-2 gap-4 sm:grid-cols-[1fr_2fr] lg:px-20 xl:grid-cols-[1fr_2fr_1fr] 2xl:rounded-3xl">
             <ul class="flex flex-col gap-8 uppercase text-gull-gray font-medium">
-                <li class="cursor-pointer transition-colors hover:text-primary">Laboratory Analysis</li>
-                <li class="cursor-pointer transition-colors hover:text-primary">Cardiology Clinic</li>
-                <li class="cursor-pointer transition-colors hover:text-primary">Gynecology Clinic</li>
-                <li class="cursor-pointer transition-colors hover:text-primary">Pathology Clinic</li>
-                <li class="cursor-pointer transition-colors hover:text-primary">Pediatrics Clinic</li>
-                <li class="cursor-pointer transition-colors hover:text-primary">Neurology Clinic</li>
+                <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="laboratory">Laboratory Analysis</li>
+                <li class="cursor-pointer transition-colors department-option-active hover:text-primary" data-department-option="cardiology">Cardiology Clinic</li>
+                <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="gynecology">Gynecology Clinic</li>
+                <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="pathology">Pathology Clinic</li>
+                <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="pediatrics">Pediatrics Clinic</li>
+                <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="neurology">Neurology Clinic</li>
             </ul>
 
-            <!-- <section class="swiper--departments">
-                <div class="swiper-wrapper">
-                    <section class="swiper-slide">Slide 1</section>
-                    <section class="swiper-slide">Slide 2</section>
-                    <section class="swiper-slide">Slide 3</section>
-                </div>
+            <section class="flex-col gap-6 hidden animate-appear" data-department-slide="laboratory">
+                <h2 class="text-abbey text-3xl font-semibold md:text-5xl">Laboratory Clinic</h2>
 
-                <div class="swiper-pagination"></div>
-            </section> -->
-            <section class="flex flex-col gap-6">
+                <p class="text-gray font-light">Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <p class="text-gray font-light">Aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio. Non viverra ligula odio ornare turpis mauris. Dio a Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <ul class="flex flex-wrap gap-4 text-primary">
+                    <li class="cursor-pointer">Neurocritical Care</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Neuro Oncology</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Geriatric Neurology</li>
+                </ul>
+
+                <button class="btn btn-secondary self-start">Learn more</button>
+            </section>
+
+            <section class="flex flex-col gap-6 animate-appear" data-department-slide="cardiology">
                 <h2 class="text-abbey text-3xl font-semibold md:text-5xl">Cardiology Clinic</h2>
+
+                <p class="text-gray font-light">Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <p class="text-gray font-light">Aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio. Non viverra ligula odio ornare turpis mauris. Dio a Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <ul class="flex flex-wrap gap-4 text-primary">
+                    <li class="cursor-pointer">Neurocritical Care</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Neuro Oncology</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Geriatric Neurology</li>
+                </ul>
+
+                <button class="btn btn-secondary self-start">Learn more</button>
+            </section>
+
+            <section class="flex-col gap-6 hidden animate-appear" data-department-slide="gynecology">
+                <h2 class="text-abbey text-3xl font-semibold md:text-5xl">Gynecology Clinic</h2>
+
+                <p class="text-gray font-light">Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <p class="text-gray font-light">Aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio. Non viverra ligula odio ornare turpis mauris. Dio a Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <ul class="flex flex-wrap gap-4 text-primary">
+                    <li class="cursor-pointer">Neurocritical Care</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Neuro Oncology</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Geriatric Neurology</li>
+                </ul>
+
+                <button class="btn btn-secondary self-start">Learn more</button>
+            </section>
+
+            <section class="flex-col gap-6 hidden animate-appear" data-department-slide="pathology">
+                <h2 class="text-abbey text-3xl font-semibold md:text-5xl">Pathology Clinic</h2>
+
+                <p class="text-gray font-light">Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <p class="text-gray font-light">Aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio. Non viverra ligula odio ornare turpis mauris. Dio a Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <ul class="flex flex-wrap gap-4 text-primary">
+                    <li class="cursor-pointer">Neurocritical Care</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Neuro Oncology</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Geriatric Neurology</li>
+                </ul>
+
+                <button class="btn btn-secondary self-start">Learn more</button>
+            </section>
+
+            <section class="flex-col gap-6 hidden animate-appear" data-department-slide="pediatrics">
+                <h2 class="text-abbey text-3xl font-semibold md:text-5xl">Pediatrics Clinic</h2>
+
+                <p class="text-gray font-light">Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <p class="text-gray font-light">Aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio. Non viverra ligula odio ornare turpis mauris. Dio a Vel non viverra ligula odio ornare turpis mauris.</p>
+
+                <ul class="flex flex-wrap gap-4 text-primary">
+                    <li class="cursor-pointer">Neurocritical Care</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Neuro Oncology</li>
+                    <span class="text-alto">|</span>
+                    <li class="cursor-pointer">Geriatric Neurology</li>
+                </ul>
+
+                <button class="btn btn-secondary self-start">Learn more</button>
+            </section>
+
+            <section class="flex-col gap-6 hidden animate-appear" data-department-slide="neurology">
+                <h2 class="text-abbey text-3xl font-semibold md:text-5xl">Neurology Clinic</h2>
 
                 <p class="text-gray font-light">Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.Vel non viverra ligula odio ornare turpis mauris.</p>
 

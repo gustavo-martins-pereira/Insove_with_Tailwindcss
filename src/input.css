@@ -18,4 +18,8 @@
     .btn-tertiary {
         @apply bg-white text-abbey hover:bg-abbey hover:text-white
     }
+
+    .department-option-active {
+        @apply text-primary;
+    }
 }
