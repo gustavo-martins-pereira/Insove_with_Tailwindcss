@@ -22,6 +22,7 @@
     
     <!-- JS -->
     <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
     <script src="assets/js/index.js" type="module" defer></script>
 </head>
 
@@ -79,7 +80,7 @@
 
     <main>
         <!-- HERO -->
-        <section class="bg-mystic py-8 px-4 relative overflow-hidden sm:py-12 sm:px-8 md:px-[20%] md:py-[10%] before:content-[''] before:block before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-hero before:bg-no-repeat before:bg-[110%_0%] before:opacity-10 before:2xl:opacity-100">
+        <section class="bg-mystic py-8 px-4 relative overflow-hidden scroll-reveal sm:py-12 sm:px-8 md:px-[20%] md:py-[10%] before:content-[''] before:block before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-hero before:bg-no-repeat before:bg-[110%_0%] before:opacity-10 before:2xl:opacity-100">
             <div class="max-w-xl flex flex-col items-center gap-4 relative sm:items-start">
                 <p class="bg-white rounded-[60px] py-2 px-4 text-gull-gray uppercase"><i data-lucide="heart-pulse"></i> Live your life</p>
                 
@@ -91,7 +92,7 @@
         </section>
 
         <!-- ACHIEVEMENTS -->
-        <article class="container m-auto py-32 flex flex-col items-center gap-6 text-center sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-around">
+        <article class="container m-auto py-32 flex flex-col items-center gap-6 text-center scroll-reveal sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-around">
             <p class="text-rolling-stone"><span class="block text-secondary text-5xl font-bold hover:text-primary mb-4">+5120</span> Happy patients</p>
             <p class="text-rolling-stone"><span class="block text-secondary text-5xl font-bold hover:text-primary mb-4">+26</span> Total branches</p>
             <p class="text-rolling-stone"><span class="block text-secondary text-5xl font-bold hover:text-primary mb-4">+53</span> Senior doctors</p>
@@ -99,7 +100,7 @@
         </article>
 
         <!-- SERVICES -->
-        <section class="m-auto xl:max-w-[1536px]">
+        <section class="m-auto xl:max-w-[1536px] headline scroll-reveal">
             <header class="bg-primary pt-12 pb-24 2xl:rounded-3xl 2xl:pt-16 2xl:px-24 2xl:pb-40">
                 <div class="container m-auto px-4 md:grid md:grid-cols-2 md:gap-40 md:text-left">
                     <h2 class="text-white text-2xl md:text-4xl">Our best services for your solution</h2>
@@ -135,7 +136,7 @@
         </section>
 
         <!-- BOOK AN APPOINTMENT -->
-        <section class="container m-auto p-4">
+        <section class="container m-auto p-4 scroll-reveal">
             <h2 class="text-4xl text-abbey font-bold">Book Appointment or call: <span class="text-secondary hover:text-primary">(+487) 384 9452</span></h2>
 
             <form class="flex flex-col gap-4 mt-8 lg:grid lg:grid-cols-2">
@@ -168,7 +169,7 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <section class="bg-testimonials bg-no-repeat bg-cover bg-center-right py-20 px-8 overflow-hidden md:grid md:grid-cols-2 md:items-center">
+        <section class="bg-testimonials bg-no-repeat bg-cover bg-center-right py-20 px-8 overflow-hidden scroll-reveal md:grid md:grid-cols-2 md:items-center">
             <img class="hidden md:block" src="assets/images/testimonials/people.png" alt="Many people">
 
             <section class="swiper--testimonials relative overflow-x-hidden overflow-y-visible">
@@ -212,7 +213,7 @@
         </section>
 
         <!-- OUT TEAM -->
-        <section class="container m-auto px-4 my-40">
+        <section class="container m-auto px-4 my-40 scroll-reveal">
             <h2 class="mb-12 text-4xl text-abbey font-bold md:text-5xl">Our Team</h2>
 
             <section class="swiper--our-team relative overflow-x-hidden overflow-y-visible">
@@ -280,7 +281,7 @@
         </section>
 
         <!-- FAQS -->
-        <section class="container m-auto my-40 p-4">
+        <section class="container m-auto my-40 p-4 scroll-reveal">
             <h2 class="mb-8 text-4xl text-abbey text-center font-bold">We've got answers</h2>
 
             <section class="w-full divide-y rounded divide-alto">
@@ -339,7 +340,7 @@
         </section>
 
         <!-- DEPARTMENTS -->
-        <section class="bg-mystic container m-auto my-40 max-w-screen-2xl px-4 py-28 grid grid-cols-2 gap-4 sm:grid-cols-[1fr_2fr] lg:px-20 xl:grid-cols-[1fr_2fr_1fr] 2xl:rounded-3xl">
+        <section class="bg-mystic container m-auto my-40 max-w-screen-2xl px-4 py-28 grid grid-cols-2 gap-4 scroll-reveal sm:grid-cols-[1fr_2fr] lg:px-20 xl:grid-cols-[1fr_2fr_1fr] 2xl:rounded-3xl">
             <ul class="flex flex-col gap-8 uppercase text-gull-gray font-medium">
                 <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="laboratory">Laboratory Analysis</li>
                 <li class="cursor-pointer transition-colors department-option-active hover:text-primary" data-department-option="cardiology">Cardiology Clinic</li>
@@ -461,7 +462,7 @@
         </section>
 
         <!-- OUR RECENT POSTS -->
-        <article class="container m-auto my-40 p-4">
+        <article class="container m-auto my-40 p-4 scroll-reveal">
             <h2 class="mb-8 text-4xl text-abbey font-bold">Our Recent Posts</h2>
             
             <section class="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-12 lg:grid-cols-3">
@@ -509,7 +510,7 @@
         </article>
 
         <!-- LISTED IN -->
-        <article class="container m-auto my-40">
+        <article class="container m-auto my-40 scroll-reveal">
             <ul class="flex flex-wrap justify-around gap-8">
                 <li><img src="assets/images/listed-in/Betael.svg" alt="Betael Logo"></li>
                 <li><img src="assets/images/listed-in/Healer.svg" alt="Healer Logo"></li>
@@ -534,7 +535,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="container m-auto px-4 text-rolling-stone">
+    <footer class="container m-auto px-4 text-rolling-stone scroll-reveal">
         <div class="sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:gap-12">
             <section class="flex flex-col gap-4 font-light">
                 <img class="max-w-44" src="assets/images/header/logo.svg" alt="Logotype of Insove">

@@ -53,6 +53,16 @@ function initialize() {
             }
         }
     }));
+
+
+    ScrollReveal({
+        distance: '50px',
+        easing: "ease-in-out",
+        reset: true,
+    }).reveal(".scroll-reveal", {
+        delay: 200,
+        origin: "bottom",
+    });
 }
 
 document.addEventListener("DOMContentLoaded", initialize);
