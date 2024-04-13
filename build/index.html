@@ -25,7 +25,7 @@
     <script src="assets/js/index.js" type="module" defer></script>
 </head>
 
-<body class="pb-64">
+<body>
     <!-- HEADER -->
     <header>
         <div class="container mx-auto">
@@ -339,7 +339,7 @@
         </section>
 
         <!-- DEPARTMENTS -->
-        <section class="bg-mystic container m-auto max-w-screen-2xl px-4 py-28 grid grid-cols-2 gap-4 sm:grid-cols-[1fr_2fr] lg:px-20 xl:grid-cols-[1fr_2fr_1fr] 2xl:rounded-3xl">
+        <section class="bg-mystic container m-auto my-40 max-w-screen-2xl px-4 py-28 grid grid-cols-2 gap-4 sm:grid-cols-[1fr_2fr] lg:px-20 xl:grid-cols-[1fr_2fr_1fr] 2xl:rounded-3xl">
             <ul class="flex flex-col gap-8 uppercase text-gull-gray font-medium">
                 <li class="cursor-pointer transition-colors hover:text-primary" data-department-option="laboratory">Laboratory Analysis</li>
                 <li class="cursor-pointer transition-colors department-option-active hover:text-primary" data-department-option="cardiology">Cardiology Clinic</li>
@@ -459,6 +459,54 @@
 
             <img class="hidden xl:block" src="assets/images/departments/hand-and-heart.svg" alt="Hand holding a heart">
         </section>
+
+        <!-- OUR RECENT POSTS -->
+        <article class="container m-auto my-40 p-4">
+            <h2 class="mb-8 text-4xl text-abbey font-bold">Our Recent Posts</h2>
+            
+            <section class="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+                <figure>
+                    <header class="relative z-10 transition-transform hover:scale-110">
+                        <img class="w-full" src="assets/images/posts/post-1.png" alt="">
+                        <span class="bg-secondary absolute bottom-0 left-0 px-4 py-2 uppercase text-white font-medium tracking-widest">Medical</span>
+                    </header>
+
+                    <figcaption class="flex flex-col gap-4 px-4 py-8">
+                        <p class="text-gray font-light">Jan 2, 2023</p>
+                        <h3 class="text-2xl text-abbey font-semibold">10 foods to avoid for your heart health</h3>
+                        <p class="text-gray font-light">It's normal to feel anxiety, worry and grief any time you're diagnosed with a condition that's certainly true... <span class="text-abbey italic font-light cursor-pointer underline">Read more</span></p>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <header class="relative z-10 transition-transform hover:scale-110">
+                        <img class="w-full" src="assets/images/posts/post-2.png" alt="">
+                        <span class="bg-secondary absolute bottom-0 left-0 px-4 py-2 uppercase text-white font-medium tracking-widest">Mental health</span>
+                    </header>
+
+                    <figcaption class="flex flex-col gap-4 px-4 py-8">
+                        <p class="text-gray font-light">Jan 3, 2023</p>
+                        <h3 class="text-2xl text-abbey font-semibold">How to be relax & calm in hard situations</h3>
+                        <p class="text-gray font-light">It's normal to feel anxiety, worry and grief any time you're diagnosed with a condition that's certainly true... <span class="text-abbey italic font-light cursor-pointer underline">Read more</span></p>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <header class="relative z-10 transition-transform hover:scale-110">
+                        <img class="w-full" src="assets/images/posts/post-3.png" alt="">
+                        <span class="bg-secondary absolute bottom-0 left-0 px-4 py-2 uppercase text-white font-medium tracking-widest">dental</span>
+                    </header>
+
+                    <figcaption class="flex flex-col gap-4 px-4 py-8">
+                        <p class="text-gray font-light">Jan 4, 2023</p>
+                        <h3 class="text-2xl text-abbey font-semibold">Best ways to make your teeth strong</h3>
+                        <p class="text-gray font-light">It's normal to feel anxiety, worry and grief any time you're diagnosed with a condition that's certainly true... <span class="text-abbey italic font-light cursor-pointer underline">Read more</span></p>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <button class="btn btn-secondary">Read more blogs</button>
+        </article>
     </main>
 </body>
 
